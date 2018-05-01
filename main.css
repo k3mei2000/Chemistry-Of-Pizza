@@ -199,6 +199,7 @@ img {
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
+	margins: 0;
     list-style: none;
     font-weight: bold;
 }
