@@ -57,7 +57,88 @@ body {
 	background-color: #ffe6cc;
 }
 
+.citation {
+	text-indent: -3em;
+	line-height: 1.4em;
+	margin: auto;
+	width: 80%;
+	padding: 0.5em;
+}
+
+.limitdisplay {
+	width: 450px;
+	height: 300px;
+	margin: auto;
+}
+
+.cc {
+	font-size: 0.6em;
+	text-align: center;
+	text-indent: 0em;
+	margin: auto;
+}
+
+.description {
+	font-size: 1.5em;
+	text-align: center;
+	margin: auto;
+	text-indent: 0em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	color: #ed1400
+}
+
+.imagecontainer {
+	position: relative;
+	width: 85%;
+	margin: auto;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	margin: auto;
+	transition: .5s ease;
+}
+
+.main {
+	font-size: 4em;
+	padding-bottom: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	color: #ed1400;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	
+}
+
+
+.imagecontainer:hover .overlay {
+	opacity: 1;
+
+}
+
+.imagecontainer:hover .image {
+	opacity: 0;
+}
+
+.current {
+	background-color: #D9403D;
+}
+
+
 img {
+	padding-top: 1em;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -99,6 +180,7 @@ img {
 	min-height: 700px;
 	border-bottom: 1px solid white;
 	font-family: 'Georgia', 'Arial', 'Sans-Serif';
+	padding-bottom: 30px;
 }
 #footer {
 	font-size: 0.5em;
@@ -111,6 +193,7 @@ img {
 	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 	margin-top: 0;
 	margin-bottom: 0;
+	color: #fff0a1 
 }
 /*
 nav ul, footer ul {
@@ -124,16 +207,36 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 */
-a {
+#nav > table > tbody > tr > th > a {
     text-decoration: none;
     color: #fff0a1;
 	text-shadow: 2px 2px #c9393c;
 }
-a:hover {
+#nav > table > tbody > tr > th > a:hover {
     text-decoration: underline;
-	color: #FFFFFF;
+	color: #ffffff;
+}
+
+a {
+	text-decoration: underline;
+	color: #dd392c;
+}
+a:hover {
+	color: #fcd202;
+}
+
+a:visited {
+	color: #99261d;
+}
+
+
+
+#header > h1 > a {
+	color: white;
+	text-decoration: none;
 }
 h1 {
+	padding-left: 0.5em;
 	color: white;
     font-size: 4em;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
@@ -143,8 +246,17 @@ h1 {
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: 3em;
 	font-family: 'Trebuchet MS', 'Helvetica', 'Sans-Serif';
+	padding-left: 1em;
+	color: #ed1400;
+}
+
+h3 {
+	font-size: 2.0em;
+	font-family: 'Trebuchet MS', 'Helvetica', 'Sans-Serif';
+	text-align: center;
+	font-style: italic;
 }
 
 p {
@@ -158,5 +270,6 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+	
 }
 
